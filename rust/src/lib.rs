@@ -1,12 +1,9 @@
 use godot::prelude::*;
 
+mod big_number;
 mod keccak256;
 
 struct EthGd;
-
-struct Test {
-    test: u256,
-}
 
 #[gdextension]
 unsafe impl ExtensionLibrary for EthGd {}

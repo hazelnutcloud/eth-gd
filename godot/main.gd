@@ -5,4 +5,9 @@ extends Node
 
 func _ready():
 	var accounts_res = await client.request("eth_accounts", [])
-	print(accounts_res)
+	if (accounts_res[0] != OK):
+		print("An error occured: ", accounts_res[1])
+		return
+		
+	var accounts = accounts_res[1]
+	print("Accounts: ", accounts)

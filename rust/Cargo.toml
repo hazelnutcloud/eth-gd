@@ -9,5 +9,6 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
+ethereum-types = "0.14.1"
 godot = { git = "https://github.com/godot-rust/gdext", branch = "master" }
 tiny-keccak = { version = "2.0", features = ["keccak"] }
