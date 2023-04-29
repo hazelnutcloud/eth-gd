@@ -1,0 +1,5 @@
+[configuration]
+entry_symbol = "gdext_rust_init"
+
+[libraries]
+windows.debug.x86_64 = "res://addons/keccak256/bin/eth_gd.dll"
