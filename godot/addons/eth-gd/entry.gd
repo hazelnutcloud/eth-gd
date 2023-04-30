@@ -2,7 +2,7 @@
 extends EditorPlugin
 
 func _enter_tree():
-	add_autoload_singleton("Keccak256", "res://addons/keccak256/keccak256.gd")
+	add_autoload_singleton("Keccak256", "res://addons/eth-gd/keccak256.gd")
 
 
 func _exit_tree():
