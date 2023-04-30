@@ -33,7 +33,7 @@ impl BaseBigNumber {
 
     #[func]
     fn to_hex_string(&self) -> GodotString {
-        format!("{:x}", self.value).into()
+        format!("0x{:x}", self.value).into()
     }
 
     #[func]
