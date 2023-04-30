@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dv6p40mcdhwdu"]
+
+[sub_resource type="GDScript" id="GDScript_r00tm"]
+resource_name = "root"
+script/source = "extends Node
+
+func _ready():
+	var super_big_number = BigNumber.new(\"0xFFFFFFFFFFFF\")
+	var another_super_big_number = BigNumber.new(\"0xFFFFFFFFFFFF\")
+	var super_duper_big_number = super_big_number.mul(another_super_big_number)
+	
+	print(super_duper_big_number.to_hex_string())
+"
+
+[node name="big-number" type="Node"]
+script = SubResource("GDScript_r00tm")

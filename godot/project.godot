@@ -21,4 +21,4 @@ Keccak256="*res://addons/keccak256/keccak256.gd"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/keccak256/plugin.cfg")
+enabled=PackedStringArray()

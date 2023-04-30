@@ -5,3 +5,6 @@ func _init(value_str: String):
 		self.from_hex_string(value_str)
 	else:
 		self.from_dec_string(value_str)
+
+static func MAX():
+	return BigNumber.new("0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF")

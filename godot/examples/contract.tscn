@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://u50immnfmgld"]
+
+[ext_resource type="Script" path="res://eth-gd/client.gd" id="1_8g1ay"]
+[ext_resource type="Script" path="res://eth-gd/contract.gd" id="2_iyy2a"]
+[ext_resource type="JSON" path="res://abis/erc20.json" id="3_l8mys"]
+
+[sub_resource type="GDScript" id="GDScript_t3o1y"]
+resource_name = "root"
+script/source = "extends Node
+
+@onready var client = $Client
+@onready var contract = $Contract
+"
+
+[node name="Root" type="Node"]
+script = SubResource("GDScript_t3o1y")
+
+[node name="Client" type="Node" parent="."]
+script = ExtResource("1_8g1ay")
+
+[node name="Contract" type="Node" parent="." node_paths=PackedStringArray("client")]
+script = ExtResource("2_iyy2a")
+client = NodePath("../Client")
+abi = ExtResource("3_l8mys")

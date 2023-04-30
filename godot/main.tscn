@@ -1,17 +1,3 @@
-[gd_scene load_steps=5 format=3 uid="uid://c0p1ue7tvl6uo"]
-
-[ext_resource type="Script" path="res://main.gd" id="1_rao3g"]
-[ext_resource type="Script" path="res://eth-gd/contract.gd" id="3_hmru4"]
-[ext_resource type="JSON" path="res://abis/erc20.json" id="4_b3t42"]
-[ext_resource type="Script" path="res://eth-gd/client.gd" id="4_bxe5m"]
+[gd_scene format=3 uid="uid://c0p1ue7tvl6uo"]
 
 [node name="Node" type="Node"]
-script = ExtResource("1_rao3g")
-
-[node name="Vault" type="Node" parent="." node_paths=PackedStringArray("client")]
-script = ExtResource("3_hmru4")
-client = NodePath("../Client")
-abi = ExtResource("4_b3t42")
-
-[node name="Client" type="Node" parent="."]
-script = ExtResource("4_bxe5m")
