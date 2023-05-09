@@ -3,3 +3,5 @@
 addons/**/*.dll
 addons/**/*.dll.exp
 addons/**/*.dll.lib
+addons/**/*.so
+addons/**/*.dylib
