@@ -5,3 +5,4 @@ addons/**/*.dll.exp
 addons/**/*.dll.lib
 addons/**/*.so
 addons/**/*.dylib
+addons/eth-gd/bin/eth-gd.gdextension

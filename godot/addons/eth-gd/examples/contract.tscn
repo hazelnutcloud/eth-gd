@@ -1,24 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://u50immnfmgld"]
+[gd_scene load_steps=4 format=3 uid="uid://b7celgk1b58o1"]
 
-[ext_resource type="Script" path="res://addons/eth-gd/client.gd" id="1_bf0fx"]
-[ext_resource type="Script" path="res://addons/eth-gd/contract.gd" id="2_hahle"]
-[ext_resource type="JSON" path="res://abis/erc20.json" id="3_l8mys"]
+[ext_resource type="Script" path="res://addons/eth-gd/examples/contract.gd" id="1_aekek"]
+[ext_resource type="Script" path="res://addons/eth-gd/client/client.gd" id="1_tbdd1"]
+[ext_resource type="Script" path="res://addons/eth-gd/contract/contract.gd" id="2_dn31m"]
 
-[sub_resource type="GDScript" id="GDScript_t3o1y"]
-resource_name = "root"
-script/source = "extends Node
-
-@onready var client = $Client
-@onready var contract = $Contract
-"
-
-[node name="Root" type="Node"]
-script = SubResource("GDScript_t3o1y")
+[node name="root" type="Node"]
+script = ExtResource("1_aekek")
 
 [node name="Client" type="Node" parent="."]
-script = ExtResource("1_bf0fx")
+script = ExtResource("1_tbdd1")
 
-[node name="Contract" type="Node" parent="." node_paths=PackedStringArray("client")]
-script = ExtResource("2_hahle")
-client = NodePath("../Client")
-abi = ExtResource("3_l8mys")
+[node name="Contract" type="Node" parent="."]
+script = ExtResource("2_dn31m")

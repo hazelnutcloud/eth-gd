@@ -1,16 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dv6p40mcdhwdu"]
+[gd_scene load_steps=2 format=3 uid="uid://vjrllyortel0"]
 
-[sub_resource type="GDScript" id="GDScript_r00tm"]
-resource_name = "root"
-script/source = "extends Node
+[ext_resource type="Script" path="res://addons/eth-gd/examples/big-number.gd" id="1_dl4ra"]
 
-func _ready():
-	var super_big_number = BigNumber.new(\"0xFFFFFFFFFFFF\")
-	var another_super_big_number = BigNumber.new(\"0xFFFFFFFFFFFF\")
-	var super_duper_big_number = super_big_number.mul(another_super_big_number)
-	
-	print(super_duper_big_number.to_hex_string())
-"
-
-[node name="big-number" type="Node"]
-script = SubResource("GDScript_r00tm")
+[node name="root" type="Node"]
+script = ExtResource("1_dl4ra")

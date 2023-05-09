@@ -16,7 +16,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Keccak256="*res://addons/eth-gd/keccak256.gd"
+Keccak256="*res://addons/eth-gd/utils/keccak256.gd"
 
 [editor_plugins]
 
