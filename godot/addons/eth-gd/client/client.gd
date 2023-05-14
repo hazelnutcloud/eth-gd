@@ -1,3 +1,4 @@
+@icon("res://addons/eth-gd/eth-logo.svg")
 class_name Client extends Node
 
 @export var rpc_url = "http://127.0.0.1:1248"

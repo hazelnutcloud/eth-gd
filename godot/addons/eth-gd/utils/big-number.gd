@@ -1,3 +1,4 @@
+@icon("res://addons/eth-gd/eth-logo.svg")
 class_name BigNumber extends BaseBigNumber
 
 func _init(value_str: String):
