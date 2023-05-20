@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5iddsnmi608y"
-path="res://.godot/imported/eth-logo.svg-7770c30458054c15fccf39c4e96fd90c.ctex"
+path="res://.godot/imported/eth_logo.svg-3f53cb03536ac339c04fe592039b3fdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/eth-gd/eth-logo.svg"
-dest_files=["res://.godot/imported/eth-logo.svg-7770c30458054c15fccf39c4e96fd90c.ctex"]
+source_file="res://addons/eth-gd/eth_logo.svg"
+dest_files=["res://.godot/imported/eth_logo.svg-3f53cb03536ac339c04fe592039b3fdb.ctex"]
 
 [params]
 

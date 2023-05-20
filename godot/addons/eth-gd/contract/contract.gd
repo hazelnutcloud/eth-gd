@@ -1,4 +1,4 @@
-@icon("res://addons/eth-gd/eth-logo.svg")
+@icon("res://addons/eth-gd/eth_logo.svg")
 class_name Contract extends Node
 
 @export var client: Client

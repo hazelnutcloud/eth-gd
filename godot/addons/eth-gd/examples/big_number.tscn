@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://vjrllyortel0"]
 
-[ext_resource type="Script" path="res://addons/eth-gd/examples/big-number.gd" id="1_dl4ra"]
+[ext_resource type="Script" path="res://addons/eth-gd/examples/big_number.gd" id="1_dl4ra"]
 
 [node name="root" type="Node"]
 script = ExtResource("1_dl4ra")
